@@ -1,0 +1,13 @@
+<h1>NYC Historical Figures</h1>
+
+<% @figures.each do |figure| %>
+  <p><%= figure.name %> <br>
+  Titles: <br>
+  <% figure.titles.each do |title| %> <br>
+    <%= title.name %> <br>
+  <% end %>
+  Landmarks he/she is connected to: <br>
+  <% figure.landmarks.each do |landmark| %> <br>
+    <%= landmark.name %> <br>
+  <% end %>  </p><br>
+<% end %>
